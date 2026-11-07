@@ -1,2 +1,2 @@
-
-film poveste 
+povestea 
+film 
