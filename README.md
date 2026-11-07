@@ -1,2 +1,2 @@
- Sorin-
-Cont 
+ filme 
+povesti 
