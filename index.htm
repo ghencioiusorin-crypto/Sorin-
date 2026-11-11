@@ -37,4 +37,19 @@ button {
 <button onclick="alert('Aici vom pregăti scenele!')">🎞️ Scene video</button>
 <button onclick="alert('Aici vor apărea filmele salvate!')">📁 Filmele mele</button>
 </body>
-</html>
+</html>HTML
+
+<script>
+function salveazaPovestea() {
+  const text = document.getElementById("idee").value.trim();
+  if (!text) {
+    alert("Scrie mai întâi povestea!");
+    return;
+  }
+  let povesti = JSON.parse(localStorage.getItem("povesti") || "[]");
+  povesti.push(text);
+  localStorage.setItem("povesti", JSON.stringify(povesti));
+  alert("Povestea a fost salvată!");
+}
+</script>
+
